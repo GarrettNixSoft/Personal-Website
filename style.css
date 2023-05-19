@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html {
+    padding: 0;
+}
+
+body {
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'Ubuntu';
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+header {
+    position: sticky;
+    overflow: visible;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 16px;
+    list-style-type: none;
+    background-color: #000000;
+}
+
+.navlist {
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navtitle {
+    float: left;
+}
+
+.navlistitem {
+    float: left;
+}
+
+.navlink {
+    font-size: 1.5em;
+}
+
+.navlink:hover {
+    background-color: #111111;
+}
+
+header a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 2em;
+    padding: 20px;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    transition-delay: transform 200ms;
+}
+
+.hidden:hover {
+    transition: 100ms;
+    transition-delay: 0ms;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+#aligner {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+#introduction {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+#introduction p {
+    font-size: 2em;
+}
+
+#about {
+    display: inline-block;
+    width: 20%;
+    height: 30%;
+    padding: 20px;
+    margin-right: 50px;
+    background-color: #222222;
+    border-radius: 16px;
+}
+
+#portrait {
+    display: inline-block;
+    max-width: 40%;
+    height: auto;
+    opacity: 100%;
+    border-radius: 8px;
+}
+
+.scroll-link {
+    font-size: 1em;
+    font-style: italic;
+}
+
+
+.showcase {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.showcase-item {
+    width: 15%;
+    height: auto;
+    margin: 40px;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 8px;
+    display: block;
+}
+
+.showcase-item h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.showcase-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 57%;
+    height: auto;
+}
+
+.showcase-item p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.showcase-item:hover {
+    background-color: #444444;
+}
+
+.showcaseitem:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.showcaseitem:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.showcaseitem:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+.edu {
+    min-height: 100vh;
+}
+
+.about {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 50px;
+}
+
+.about-year {
+    margin: 0;
+}
+
+.contact {
+    min-height: 50vh;
+    text-align: center;
+}
+
+.contact p {
+    margin: 5px;
+}
+
+.contact a {
+    color: #83eefc;
+}
+
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
