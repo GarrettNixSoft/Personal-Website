@@ -31,3 +31,13 @@ showcaseElements.forEach((el) => {
     }
     counter++;
 });
+
+var isMobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
+
+if (isMobile) {
+    console.log("Detected mobile browser");
+    alert("Hi there! My site isn't optimized for a mobile experience yet. To best view my site, please try a desktop browser.");
+}
+else {
+    console.log("Detected desktop browser");
+}
