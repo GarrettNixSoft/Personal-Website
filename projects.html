@@ -5,6 +5,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="portfolio_style.css">
     <script defer src="app.js"></script>
+
+    <!-- Google icon for links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 100,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,7 +34,102 @@
     </header>
 
     <section id="showcase">
-        <p>Coming soon!</p>
+
+        <div class="portfolio left hidden">
+
+            <div class="visual left">
+                <span class="helper"></span><img src="images/CanvaCord_logo.png" class="portfolio-image">
+            </div>
+
+            <div class="description left">
+
+                <h1>CanvaCord</h1>
+
+                <a class="portfolio-link" href="https://github.com/GarrettNixSoft/CanvaCord" target="_blank" rel="noopener noreferrer">See it on GitHub! <span class="material-symbols-outlined">arrow_outward</span></a>
+
+
+                <p>
+                    Built in collaboration with <a href="https://github.com/royalty1free">Andrew Bae</a>, <a href="https://github.com/kittyavenue">Francisco Rivera</a>,
+                    and <a href="https://github.com/ian-es">Ian Escalante</a>.<br/><br/>
+                    CanvaCord is a Desktop or Server application designed to integrate the Canvas LMS by Instructure with Discord via Discord's bot system.<br/><br/>
+                    CanvaCord allows one user (typically a Discord server owner) to set up an "Instance" of CanvaCord which defines a link between Canvas and Discord
+                    for one Canvas Course and the target Discord server. Instances can be configured to fetch new Canvas data (such as assignments and announcements)
+                    at varying intervals, and to send notifications about new entries on user-defined schedules, to user-defined roles using Discord's role-pinging
+                    feature.<br/><br/>
+                    Additionally, CanvaCord leverages Discord's Slash Commands feature to provide on-demand access to course information such as assignment lookups,
+                    course syllabi, and textbooks.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio right hidden-right">
+
+            <div class="visual right">
+                <span class="helper"></span><img src="images/jflatgl.png" class="portfolio-image">
+            </div>
+
+            <div class="description right">
+                
+                <h1>JFlatGL</h1>
+
+                <p>
+                    JFlatGL is a 2D game library written in Java I've developed on-and-off since mid-2019.<br/><br/>
+                    Built atop the LWJGL library, JFlatGL aims to make programming 2D games easier by providing a framework for managing assets, updating game states,
+                    and rendering sprites.
+                    JFlatGL implements all of the OpenGL code necessary for displaying your game via RenderElements of various types. Developers define their own GameStates
+                    and game logic, then let JFlatGL handle all the drawing by simply calling render() on their RenderElements.<br/><br/>
+                    JFlatGL also handles audio, font rendering, and more out of the box. More advanced users can implement custom splash screens for their games using the
+                    built-in splash screen feature.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio left hidden">
+
+            <div class="visual left">
+                <span class="helper"></span><img src="images/ddpc_promo.png" class="portfolio-image">
+            </div>
+
+            <div class="description left">
+
+                <h1>Doki Doki Platformer Club!</h1>
+
+                <p>
+                    Doki Doki Platformer Club is, as the title implies, a platformer fan game based on <a href="https://ddlc.moe/">Doki Doki Literature Club!</a> by Team Salvato.<br/><br/>
+                    
+                    My first publicly released game, DDPC has a special place in my heart as likely my proudest creation so far. It was also my first game for which I used GPU rendering
+                    via LWJGL and OpenGL, introducing me to modern graphics programming. JFlatGL as a project actually started as work toward a sequel to DDPC, since my ideas at the time
+                    were too ambitious for the code base I had at the time!<br/><br/>
+
+                    Check out the trailer for the game <a href="https://www.youtube.com/watch?v=TkfK-qzEt5s">here</a>, or download the game from <a href="https://floober101games.wixsite.com/developer/doki-doki-platformer-club">here!</a>
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="portfolio right hidden-right">
+
+            <div class="visual right">
+                <span class="helper"></span><img src="images/a-star.jpg" class="portfolio-image">
+            </div>
+
+            <div class="description right">
+                
+                <h1>A* Pathfinding Implementation</h1>
+
+                <p>
+                    A* is...
+                </p>
+
+            </div>
+
+        </div>
+
     </section>
 
 </body>

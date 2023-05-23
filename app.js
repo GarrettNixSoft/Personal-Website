@@ -12,8 +12,14 @@ hiddenElements.forEach((el) => {
     observer.observe(el);
 });
 
+const hiddenElementsRight = document.querySelectorAll('.hidden-right');
+
+hiddenElementsRight.forEach((el) => {
+    observer.observe(el);
+});
+
 const showcaseElements = document.querySelectorAll('.showcase-item');
-const links = ["https://github.com/GarrettNixSoft/JFlatGL", "https://github.com/GarrettNixSoft/AStarTest", "https://github.com/GarrettNixSoft/DDPC-Code", "https://github.com/GarrettNixSoft/CanvaCord"];
+const links = ["https://github.com/GarrettNixSoft/CanvaCord", "https://github.com/GarrettNixSoft/JFlatGL", "https://github.com/GarrettNixSoft/AStarTest", "https://github.com/GarrettNixSoft/DDPC-Code"];
 
 var counter = 0;
 showcaseElements.forEach((el) => {
