@@ -35,8 +35,18 @@ showcaseElements.forEach((el) => {
 var isMobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
 
 if (isMobile) {
+
+    const cookieKey = "has-annoyed-user-already";
+
+    const cookieValue = document.cookie
+        .split("; ")
+        .find((row) => row.startsWith(cookieKey));
+
     console.log("Detected mobile browser");
-    alert("Hi there! My site isn't optimized for a mobile experience yet. To best view my site, please try a desktop browser.");
+    if (!cookieValue) {
+        alert("Hi there! My site isn't optimized for a mobile experience yet. To best view my site, please try a desktop browser.");
+        document.cookie = "has-annoyed-user-already=true";
+    }
 }
 else {
     console.log("Detected desktop browser");
