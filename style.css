@@ -286,3 +286,39 @@ header a {
         transition: none;
     }
 }
+
+
+.skill-item {
+    width: 15%;
+    height: auto;
+    margin: 40px;
+    padding: 20px;
+    background-color: #222222;
+    border-radius: 8px;
+    display: block;
+}
+
+.skill-item h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.skill-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 57%;
+    height: auto;
+}
+
+.skill-item p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.skill-item:hover {
+    background-color: #444444;
+}

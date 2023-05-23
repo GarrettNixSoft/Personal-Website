@@ -1,1 +1,1 @@
-rsync -av . /var/www/garrettnix.com --exclude=deploy.sh
+rsync -avi . /var/www/garrettnix.com --exclude=deploy.sh .git
