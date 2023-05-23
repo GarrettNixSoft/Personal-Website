@@ -47,7 +47,6 @@
 
                 <a class="portfolio-link" href="https://github.com/GarrettNixSoft/CanvaCord" target="_blank" rel="noopener noreferrer">See it on GitHub! <span class="material-symbols-outlined">arrow_outward</span></a>
 
-
                 <p>
                     Built in collaboration with <a href="https://github.com/royalty1free">Andrew Bae</a>, <a href="https://github.com/kittyavenue">Francisco Rivera</a>,
                     and <a href="https://github.com/ian-es">Ian Escalante</a>.<br/><br/>
@@ -74,6 +73,8 @@
                 
                 <h1>JFlatGL</h1>
 
+                <a class="portfolio-link" href="https://github.com/GarrettNixSoft/JFlatGL" target="_blank" rel="noopener noreferrer">See it on GitHub! <span class="material-symbols-outlined">arrow_outward</span></a>
+
                 <p>
                     JFlatGL is a 2D game library written in Java I've developed on-and-off since mid-2019.<br/><br/>
                     Built atop the LWJGL library, JFlatGL aims to make programming 2D games easier by providing a framework for managing assets, updating game states,
@@ -98,12 +99,16 @@
 
                 <h1>Doki Doki Platformer Club!</h1>
 
+                <a class="portfolio-link" href="https://github.com/GarrettNixSoft/DDPC-Code" target="_blank" rel="noopener noreferrer">See it on GitHub! <span class="material-symbols-outlined">arrow_outward</span></a>
+
                 <p>
                     Doki Doki Platformer Club is, as the title implies, a platformer fan game based on <a href="https://ddlc.moe/">Doki Doki Literature Club!</a> by Team Salvato.<br/><br/>
                     
-                    My first publicly released game, DDPC has a special place in my heart as likely my proudest creation so far. It was also my first game for which I used GPU rendering
-                    via LWJGL and OpenGL, introducing me to modern graphics programming. JFlatGL as a project actually started as work toward a sequel to DDPC, since my ideas at the time
-                    were too ambitious for the code base I had at the time!<br/><br/>
+                    My first publicly released game, DDPC has a special place in my heart as likely my proudest creation so far. I started working in it in late 2017/early 2018, and
+                    released it via the DDLC subreddit on May 25, 2018. I later released a "Winter Update" with a winter theme and some challenge modes in early 2019.<br/><br/>
+                    
+                    DDPC was my first game for which I used GPU rendering via LWJGL and OpenGL, introducing me to modern graphics programming. JFlatGL as a project actually started as work
+                    toward a sequel to DDPC, since my ideas at the time were too ambitious for the code base I had at the time!<br/><br/>
 
                     Check out the trailer for the game <a href="https://www.youtube.com/watch?v=TkfK-qzEt5s">here</a>, or download the game from <a href="https://floober101games.wixsite.com/developer/doki-doki-platformer-club">here!</a>
                 </p>
@@ -122,8 +127,16 @@
                 
                 <h1>A* Pathfinding Implementation</h1>
 
+                <a class="portfolio-link" href="https://github.com/GarrettNixSoft/AStarTest" target="_blank" rel="noopener noreferrer">See it on GitHub! <span class="material-symbols-outlined">arrow_outward</span></a>
+
                 <p>
-                    A* is...
+                    The A* pathfinding algorithm is commonly used in games for navigating interactive spaces. A* is a populat choice due to its greedy nature and guarantee of an optimal
+                    solution.<br/><br/>
+                    This implementation of A* in Java implements a slightly modified version of A* which forgoes the guarantee of optimality in favor of a slight performance boost. This
+                    is achieved by simply returning as soon as any valid solution is found, regardless of whether other solutions may exist.<br/><br/>
+                    This implementation uses mazes generated via an algorithm I found online (it's been a while, so I don't remember exactly where). I used Java's AWT graphics API to provide
+                    a real-time rendering of the algorithm as it computes the solution to each maze. (On the smaller mazes, it will generally solve them so quickly that you don't see much).<br/><br/>
+                    The starting space is marked in yellow, with the end space in magenta. Spaces currently open for exploring are marked green, while spaces already visited are marked red.
                 </p>
 
             </div>
